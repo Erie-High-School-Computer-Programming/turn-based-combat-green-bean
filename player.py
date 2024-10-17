@@ -12,9 +12,9 @@ class Player:
         """This method should allow the character to attack another character using the 
         selected move. The move should deal damage to the target character"""
 
-        if random.randint(0, 100) < self.move_list[move]["accuracy"]:
+        if random.randint(0, 100) < self.move_list["Heavens_Sword"]["accuracy"]:
             warden.hp -= self.move_list["Heavens_Sword"]["damage"]
-            print(f"{target.name} was hit")
+            print("Warden was hit")
         else:
             print("Attack missed")
 
@@ -80,6 +80,4 @@ jacob = Player("Jacob",
 
 print(warden.hp)
 angel.attack("Heavens_Sword", warden)
-print(warden.hp)
-angel.attack("Blades_Of_The_Gods", warden)
 print(warden.hp)
