@@ -1,3 +1,4 @@
+import random
 # Create a game that allows players to choose between multiple characters
 # and fight against each other. The game should have a simple combat system
 # where characters can deal damage to each other. The game should also have
@@ -18,6 +19,8 @@
 
 # The game should have a way to exit the game.
 
+from player import jacob
+
 class Game:
     def __init__(self):
         """Initializes the game,
@@ -27,7 +30,14 @@ class Game:
         and allow them to select a character,
         then have the computer choose a character at random
         It should randomly select a player to go first"""
-        pass
+    players =[jacob]
+    random_players = random.choice(players)
+
+    print(random_players)
+
+
+    for player in players:
+            print(player.name)
 
     def turn(self, current_turn):
         """This method should show the current health of both players, 
