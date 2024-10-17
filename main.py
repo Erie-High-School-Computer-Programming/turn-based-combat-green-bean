@@ -20,6 +20,9 @@ import random
 # The game should have a way to exit the game.
 
 from player import jacob
+from player import Warden
+from player import Angel
+from player import Demon
 
 class Game:
     def __init__(self):
@@ -31,8 +34,15 @@ class Game:
         then have the computer choose a character at random
         It should randomly select a player to go first"""
     players =[jacob]
-    random_players = random.choice(players)
+    players =[Warden]
+    players =[Angel]
+    players =[Demon]
 
+    random_players = random.choice(players)
+    random_players = random.choice(players)
+    random_players = random.choice(players)
+    random_players = random.choice(players)
+    
     print(random_players)
 
 
