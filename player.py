@@ -36,13 +36,13 @@ class Player:
 
 warden = Player("Warden",
                  1000,
-                   {
-                    "punch": {"damage": 15, "accuracy": 100},
-                    "World_Slash":{"damage": 45, "accuracy": 75},
-                    "Downfall_Ram": {"damage": 80, "accuracy": 50},
-                    "Lockdown": {"damage": 140, "accuracy":25}
-                    }
-                    )
+                {
+                "punch": {"damage": 15, "accuracy": 100},
+                "World_Slash":{"damage": 45, "accuracy": 75},
+                "Downfall_Ram": {"damage": 80, "accuracy": 50},
+                "Lockdown": {"damage": 140, "accuracy":25}
+                }
+                )
 
 
 
@@ -55,7 +55,15 @@ angel = Player("Angel",
                 }
                 )
 
-demon = Player("Demon", 500, {"Slash": {"damage": 30, "accuracy": 95 }, "Fire_Dagger": 60, "accuracy": 75})
+demon = Player("Demon",
+                500,
+                {
+                "Slash": {"damage": 30, "accuracy": 95 },
+                "Fire_Dagger": {"damage": 60, "accuracy": 75}
+                }
+                )
+
+jacob = Player("Jacob", 1500,)
 
 
 
