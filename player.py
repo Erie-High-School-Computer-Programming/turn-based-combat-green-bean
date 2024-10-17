@@ -63,7 +63,7 @@ demon = Player("Demon",
                 }
                 )
 
-jacob = Player("Jacob", 1500,)
+jacob = Player("Jacob", 1500, )
 
 
 
