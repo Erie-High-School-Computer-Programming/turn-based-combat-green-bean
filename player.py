@@ -63,7 +63,14 @@ demon = Player("Demon",
                 }
                 )
 
-jacob = Player("Jacob", 1500, )
+jacob = Player("Jacob",
+                1500,
+                {
+                "Knights_Blade": {"damage": 75, "accuracy": 90},
+                "Shining_Armour": {"healing": 250, "accuracy": 100},
+                "Blades_Of_The_Gods": {"damage": 200, "accuracy": 45}
+                }
+                )
 
 
 
