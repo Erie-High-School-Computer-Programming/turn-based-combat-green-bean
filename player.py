@@ -1,4 +1,5 @@
 import random 
+
 class Player:
     def __init__(self, name, hp, move_list):
         """This method initializes the character
@@ -17,15 +18,6 @@ class Player:
             print("Warden was hit")
         else:
             print("Attack missed")
-
-
-
-
-
-
-        
-
-         
 
 
     def display_stats(self):
