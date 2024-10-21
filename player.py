@@ -1,5 +1,8 @@
 import random 
 
+character = int(input("Enter a number For your character: ")) 
+print("Your character is jacob:", character)
+
 class Player:
     def __init__(self, name, hp, move_list):
         """This method initializes the character
