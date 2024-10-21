@@ -12,8 +12,8 @@ class Player:
         """This method should allow the character to attack another character using the 
         selected move. The move should deal damage to the target character"""
 
-        if random.randint(0, 100) < self.move_list["Heavens_Sword"]["accuracy"]:
-            warden.hp -= self.move_list["Heavens_Sword"]["damage"]
+        if random.randint(0, 100) < self.move_list["Blades_Of_The_Gods"]["accuracy"]:
+            warden.hp -= self.move_list["Blades_Of_The_Gods"]["damage"]
             print("Warden was hit")
         else:
             print("Attack missed")
@@ -21,8 +21,7 @@ class Player:
 
 
 
-        attack = self.move_list[move]
-        target.hp -= attack["damage"]
+
 
         
 
@@ -43,7 +42,7 @@ warden = Player("Warden",
                 "punch": {"damage": 15, "accuracy": 100},
                 "World_Slash":{"damage": 45, "accuracy": 75},
                 "Downfall_Ram": {"damage": 80, "accuracy": 50},
-                "Lockdown": {"damage": 140, "accuracy":25}
+                "Lockdown": {"damage": 140, "accuracy":35}
                 }
                 )
 
@@ -71,7 +70,7 @@ jacob = Player("Jacob",
                 {
                 "Knights_Blade": {"damage": 75, "accuracy": 90},
                 "Shining_Armour": {"healing": 250, "accuracy": 100},
-                "Blades_Of_The_Gods": {"damage": 200, "accuracy": 45}
+                "Blades_Of_The_Gods": {"damage": 200, "accuracy": 20}
                 }
                 )
 
@@ -79,5 +78,5 @@ jacob = Player("Jacob",
 
 
 print(warden.hp)
-angel.attack("Heavens_Sword", warden)
+jacob.attack("Blades_Of_The_Gods", warden)
 print(warden.hp)
