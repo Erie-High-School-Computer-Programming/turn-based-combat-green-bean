@@ -1,7 +1,5 @@
 import random 
 
-character = int(input("Enter a number For your character: ")) 
-print("Your character is jacob:", character)
 
 class Player:
     def __init__(self, name, hp, move_list):
@@ -16,9 +14,9 @@ class Player:
         """This method should allow the character to attack another character using the 
         selected move. The move should deal damage to the target character"""
 
-        if random.randint(0, 100) < self.move_list["Blades_Of_The_Gods"]["accuracy"]:
-            warden.hp -= self.move_list["Blades_Of_The_Gods"]["damage"]
-            print("Warden was hit")
+        if random.randint(0, 10) < self.move_list["Blades_Of_The_Gods"]["accuracy"]:
+            target.hp -= self.move_list["Blades_Of_The_Gods"]["damage"]
+            print(f'{target.name} was hit')
         else:
             print("Attack missed")
 

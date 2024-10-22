@@ -1,7 +1,5 @@
 import random
 
-character = int(input("Enter a number For your character: ")) 
-print("Your character is jacob:", character)
 
 # Create a game that allows players to choose between multiple characters
 # and fight against each other. The game should have a simple combat system
