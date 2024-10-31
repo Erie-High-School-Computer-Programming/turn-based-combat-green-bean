@@ -27,10 +27,6 @@ class Player:
         """This method should display the current health of the character"""
         pass
 
-
-
-
-
 warden = Player("Warden",
                  1000,
                 {
@@ -67,11 +63,4 @@ jacob = Player("Jacob",
                 "Shining_Armour": {"healing": 250, "accuracy": 100},
                 "Blades_Of_The_Gods": {"damage": 200, "accuracy": 20}
                 }
-                )
-
-
-
-
-print(warden.hp)
-jacob.attack("Blades_Of_The_Gods", warden)
-print(warden.hp)
+                )                      

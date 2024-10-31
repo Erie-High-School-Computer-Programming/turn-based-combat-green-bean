@@ -1,14 +1,8 @@
-import random
-from player import Player
 
-def run(self):
-    player_choice = int(input("Choose your character (0: warden, 1: jacob, 2: Angel, 3: Demon:) > "))
-    characters = [
-            Player("warden", 5, 3, 100, ["blade", "shoot"], [15, 25]),
-            Player("jacob", 5, 1, 100, ["stab", "magicmissile"], [1, 60]),
-            Player("Angel", 15, 7, 200, ["beam", "rararatsputin"], [20, 80]),
-            Player("Demon", 20, 15,  900, ["fire","Tactical nuke"], [90,169])
-        ]
+import random
+
+
+
 # Create a game that allows players to choose between multiple characters
 # and fight against each other. The game should have a simple combat system
 # where characters can deal damage to each other. The game should also have
