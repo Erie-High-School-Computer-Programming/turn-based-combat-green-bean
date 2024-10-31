@@ -22,6 +22,7 @@ class Player:
         else:
             print("Attack missed")
 
+            pass
 
     def display_stats(self):
         """This method should display the current health of the character"""
@@ -59,8 +60,8 @@ demon = Player("Demon",
 jacob = Player("Jacob",
                 1500,
                 {
-                "Knights_Blade": {"damage": 75, "accuracy": 90},
-                "Shining_Armour": {"healing": 250, "accuracy": 100},
+                "Knights_Blade": {"damage": 75, "accuracy": 70},
+                "Shining_Armour": {"damage": 110, "accuracy": 38},
                 "Blades_Of_The_Gods": {"damage": 200, "accuracy": 20}
                 }
                 )                      
